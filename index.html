@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#1746d1">
+  <meta name="description" content="THE BOYZ concerts and fan concerts archive.">
+  <title>Concerts Archive — THE BOYZ Archive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="top">
+    <header class="masthead">
+      <div class="utility">
+        <a class="brand" href="https://tbzarchive1206.github.io/tbzarchive/">THE BOYZ / FAN ARCHIVE</a>
+        <nav><span>CONCERTS</span><span>/</span><a href="https://x.com/tbzarchive1206_" target="_blank" rel="noopener noreferrer">TWITTER ↗</a></nav>
+      </div>
+      <h1><span class="solid">CONCERTS</span><span class="outline">ARCHIVE</span></h1>
+      <div class="stats">
+        <p><strong id="recordingCount">—</strong> RECORDINGS</p><i></i>
+        <p>UPDATED <strong id="updatedDate">—</strong></p><i></i>
+        <p><strong>DAILY</strong> SYNC</p>
+      </div>
+    </header>
+
+    <section class="controls" aria-label="Archive search">
+      <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" placeholder="SEARCH RECORDINGS..."></label>
+    </section>
+
+    <section class="collection-picker">
+      <div class="picker-head"><p>SELECT A RECORDING · <span id="visibleCount">—</span> VIDEOS</p><a id="sourceFolder" href="#" target="_blank" rel="noopener noreferrer">OPEN SOURCE FOLDER ↗</a></div>
+      <div class="tile-grid" id="tileGrid"></div>
+      <div class="empty" id="empty" hidden><strong>NO RESULTS</strong><span>TRY A DIFFERENT TITLE.</span></div>
+    </section>
+
+    <footer><a href="https://tbzarchive1206.github.io/tbzarchive/">← MAIN ARCHIVE</a><a href="#top">BACK TO TOP ↑</a></footer>
+  </main>
+  <noscript><p class="noscript">JavaScript is required to load this archive.</p></noscript>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
