@@ -26,3 +26,11 @@ test("tiles use direct Drive links and responsive INSTA layout", async () => {
   assert.match(styles, /repeat\(5,minmax\(0,1fr\)\)/);
   assert.match(styles, /repeat\(2,minmax\(0,1fr\)\)/);
 });
+
+test("Pages build includes the configured favicon", async () => {
+  const html = await read("index.html");
+  const buildScript = await read("scripts/prepare_site.py");
+  await fs.access(new URL("icon.png", root));
+  assert.match(html, /rel="icon"[^>]+href="\.\/icon\.png\?v=2"/);
+  assert.match(buildScript, /"icon\.png"/);
+});
